@@ -3,7 +3,7 @@ Description=openhd-dump1090-mutability
 
 [Service]
 Type=simple
-ExecStart=/usr/local/bin/openhd-dump1090-mutability --net
+ExecStart=/usr/local/bin/openhd-dump1090-mutability --net --no-fix --write-json-every 2
 
 [Install]
 WantedBy=multi-user.target
