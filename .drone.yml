@@ -6,7 +6,7 @@ platform:
   arch: arm
 steps:
 - name: fetch
-  image: arm32v6/alpine
+  image: arm32v6/alpine:3.12
   commands:
   - apk add git
   - git fetch --tags
@@ -31,7 +31,7 @@ platform:
   arch: arm
 steps:
 - name: fetch
-  image: arm32v6/alpine
+  image: arm32v6/alpine:3.12
   commands:
   - apk add git
   - git fetch --tags
@@ -56,7 +56,7 @@ platform:
   arch: arm64
 steps:
 - name: fetch
-  image: arm64v8/alpine
+  image: arm64v8/alpine:3.13
   commands:
   - apk add git
   - git fetch --tags
@@ -81,7 +81,7 @@ platform:
   arch: arm64
 steps:
 - name: fetch
-  image: arm64v8/alpine
+  image: arm64v8/alpine:3.13
   commands:
   - apk add git
   - git fetch --tags
